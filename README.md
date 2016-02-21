@@ -3,7 +3,7 @@ mandioca-dashboard
 
 ## Instructions
 
-```npm install``
+```npm install```
 
 ```bower install```
 
