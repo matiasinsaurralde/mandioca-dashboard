@@ -1,4 +1,5 @@
-<md-content ng-controller="UsageController as vm" class="md-padding" layout="row">
+<md-content ng-controller="UsageController as um" class="md-padding" layout="row">
+  <!--
   <div flex>
     <nvd3 options="vm.chartOptions" data="vm.ramChartData"></nvd3>
     <h4 class="donut-chart-title">RAM</h4>
@@ -7,4 +8,8 @@
     <nvd3 options="vm.chartOptions" data="vm.storageChartData"></nvd3>
     <h4 class="donut-chart-title">Storage</h4>
   </div>
+  -->
+  <p>{{um.apis}}</p>
+  <nvd3 options="um.options" data="um.data"></nvd3>
+
 </md-content>

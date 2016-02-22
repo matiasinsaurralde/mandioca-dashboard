@@ -14,11 +14,11 @@
         icon: 'dashboard',
         sref: '.dashboard'
       },
-      /*{
-        name: 'Profile',
-        icon: 'person',
+      {
+        name: 'Add API',
+        icon: 'add_circle',
         sref: '.profile'
-      },
+      }/*,
       {
         name: 'Table',
         icon: 'view_module',

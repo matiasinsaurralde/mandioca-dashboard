@@ -1,4 +1,9 @@
-<div layout-gt-md="row">
-  <panel-widget flex title="API Name" template="app/views/partials/controlPanel.html" class="fixed-height-widget"></panel-widget>
-  <panel-widget flex title="API Stats" template="app/views/partials/usage.html" class="fixed-height-widget"></panel-widget>
+<div layout-gt-md="row" ng-repeat="api in vm.apis">
+  <panel-widget flex title="{{api.name}}" template="app/views/partials/controlPanel.html" class="fixed-height-widget"></panel-widget>
+
+  <panel-widget flex title="API Stats" class="fixed-height-widget">
+    <md-content class="md-padding" layout="row">
+      <nvd3 options="$parent.vm.options" data="$parent.data" api="$parent.vm.apiStats" config="{refreshDataOnly: true,  deepWatchData: true}"></nvd3>
+    </md-content>
+</panel-widget>
 </div>

@@ -1,0 +1,26 @@
+<!-- TODO: Add validations -->
+<md-content md-theme="dark" class="md-padding" layout="row" layout-sm="column">
+    <md-input-container>
+        <label>API Name</label>
+        <input ng-model="vm.api.name">
+    </md-input-container>
+</md-content>
+<md-content class="md-padding">
+    <form name="userForm" method="post">
+        <div layout layout-sm="column">
+            <md-input-container flex>
+                <label>Slug</label>
+                <input ng-model="vm.api.slug"
+                       placeholder="Placeholder text">
+            </md-input-container>
+            <md-input-container flex>
+                <label>End Point</label>
+                <input ng-model="vm.api.endpoint">
+            </md-input-container>
+        </div>
+	<div class="clearfix"></div>
+	<md-button class="md-raised md-warn" ng-click="vm.add()">
+		Submit
+	</md-button>
+    </form>
+</md-content>
